@@ -1,16 +1,12 @@
-export function Saludar() {
-   //const saludar = "hola react"
-   const Marcas = ['nike','adidas','rebook']
-   const color = ['azul','blanco','rojo']
-   const newArr = [...Marcas, ...color]
-   const marcas =  newArr.map((m) =>  
-    <li>
-      {m}
-    </li>
-   ) 
-   return(
-     <ul>{marcas}</ul> 
-    
-   );
-   
+import React from 'react'
+import { CardsEnd } from './CardsEnd'
+import  './index.css'
+
+export const App = () => {
+  return (
+    <div className='App'>
+      <CardsEnd />
+    </div>
+  )
 }
+
