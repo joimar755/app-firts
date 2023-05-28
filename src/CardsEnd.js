@@ -31,16 +31,19 @@ export const CardsEnd = () => {
   console.log(productos);
 
   return (
-    <div className="container d-flex justify-content-center align-items-center h-100">
-      <div className="row">
+    <div className="container d-flex justify-content-center align-items-center">
+      <div> 
+      <div className="row"> 
         {
         productos.map(Pro => ( 
-          <div className="col-md-4 " key={Pro.id}>
+          <div className="col-md-4" key={Pro.id}>
           <CardOne title={Pro.nombre} ImgPro={Pro.image}/>
         </div>
         ))
        }
       </div>
+      </div>
+    
     </div>
   );
 };
